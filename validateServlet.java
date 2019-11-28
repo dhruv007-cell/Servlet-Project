@@ -44,8 +44,9 @@ public class validateServlet extends HttpServlet {
            else
            {
                RequestDispatcher rd= getServletContext().getRequestDispatcher("/LoginServlet");
+                 out.println("Invalid credentials");
                rd.include(request, response);
-               out.println("Invalid credentials");
+             
            }
     }
     }
